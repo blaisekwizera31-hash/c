@@ -17,3 +17,11 @@ int main(){
 	puts(name);
 //	printf("\n");
 }
+#include <stdio.h>
+int main(){
+	char name[30];
+	printf("Enter name: ");
+	gets(name);
+	puts(name);
+//	printf("\n");
+}
