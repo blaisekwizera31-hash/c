@@ -24,4 +24,18 @@ int main(){
 	gets(name);
 	puts(name);
 //	printf("\n");
+
+}
+
+#include <stdio.h>
+#include <string.h>
+int main(){
+	int array1[9] = {10, 12, 13, 14};
+	int array2[9];
+	for(int i=0; i<4; i++){
+	   array2[i] = array1[i];	
+	}
+    for(int i=0; i<4; i++){
+    printf("%d\n", array2[i]);
+ 	}
 }
