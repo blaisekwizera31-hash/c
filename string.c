@@ -39,3 +39,20 @@ int main(){
     printf("%d\n", array2[i]);
  	}
 }
+#include <stdio.h>
+int main(){
+	int array[9];
+	printf("Enter the any numbers of the array: ");
+	for(int i = 0; i<5; i++){
+	    scanf("%d", &array[i]);	
+	}
+	for(int i=0; i<5; i++){
+	    printf("%d", array[i]);
+	}
+	
+	for( int i=4;   i>0; i--){
+		printf("%d\n", array[i]);
+	}
+		
+return 0;
+}
