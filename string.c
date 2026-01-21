@@ -78,3 +78,27 @@ int main(){
     }
     return 0;
 }
+
+#include <stdio.h>
+
+int main(){
+
+    int array[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    int r, c;
+    int product;
+
+    for (r = 0; r < 3; r++){
+        for (c = 0; c < 3; c++){
+            product = array[0][1] * array[0][2] * array[1][2];
+        }
+    }
+
+    printf("The product is %d", product);
+
+    return 0;
+}
