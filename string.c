@@ -56,3 +56,25 @@ int main(){
 		
 return 0;
 }
+
+#include <stdio.h>
+int main(){
+    int array[] = {1, 2, 3, 4, 5, 6};
+    int newarray[10];
+    for ( int i=0; i<6; i++){
+        if( i == 0){
+            newarray[i]= array[i]+ array[i+1];
+       
+        }
+        else if( i == 5){
+            newarray[i]= array[i] +array[i-1];
+            
+        }
+        else {
+            newarray[i]= array[i-1] +array[i+1];
+            
+        }
+        printf("%d\n", newarray[i]);
+    }
+    return 0;
+}
