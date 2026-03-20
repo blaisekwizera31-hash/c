@@ -24,12 +24,12 @@
 //    return 0;
 //}
 
-#include <stdio.h>
-#include <math.h>
-int main(){
-  int result = pow(5, 6);
-  printf("5 power 6 is :%d", result);
-}
+//#include <stdio.h>
+//#include <math.h>
+//int main(){
+//   int result = pow(5, 6);
+//   printf("5 power 6 is :%d", result);
+//}
 
 
 //#include <stdio.h>
@@ -112,36 +112,120 @@ int main(){
 //    return 0;
 //}
 
+//#include <stdio.h>
+//int main(){
+//	int n, i, j;
+//	
+//	printf("Enter the number of rows: ");
+//	scanf("%d", &n);
+//	
+//	for(i=0; i<n; i++){
+//		int val =1;
+//		for(j=0; j<=i; j++){
+//			printf("%d", val);
+//			val = val*(i-j)/(j+1);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+//
+//
+
+//#include <stdio.h>
+//int main(){
+//	char name[30];
+//	printf("Enter name: ");
+//	gets(name);
+//	puts(name);
+////	printf("\n");
+//}
+
+//#include <stdio.h>
+//#include <string.h>
+//int main(){
+//char b[6]="divin";
+//char c[34]="ndoli claire";
+//////puts(c);
+////int length = strlen(c);
+//////strlen(c);
+//////printf(strlen(c))	;
+////printf("%d\n", length);
+////char copy = strcpy(b, c);
+////printf("%s\n", copy );
+//  int compared = strcmp(b, c);
+//printf(" %d", compared);
+//
+//}
+//
+
+//#include <stdio.h>
+//int main(){
+//	int array[9];
+//	printf("Enter the any numbers of the array: ");
+//	for(int i = 0; i<5; i++){
+//	    scanf("%d", &array[i]);	
+//	}
+//	for(int i=0; i<5; i++){
+//	    printf("%d", array[i]);
+//	}
+//	
+//	for( int i=4;   i>0; i--){
+//		printf("%d\n", array[i]);
+//	}
+//		
+//return 0;
+//}
+
+
+//#include <stdio.h>
+//#include <string.h>
+//int main(){
+//	int array1[9] = {10, 12, 13, 14};
+//	int array2[9];
+//	for(int i=0; i<4; i++){
+//	   array2[i] = array1[i];	
+//	}
+//    for(int i=0; i<4; i++){
+//    printf("%d\n", array2[i]);
+// 	}
+//}
+
+//#include <stdio.h>
+//int main(){
+//	
+//	int unique[] = numbers[0];
+//	int numbers[] = {1, 2, 2, 5, 5};
+//	
+//}
+
+
+
+
+
 #include <stdio.h>
-int main(){
-	int n, i, j;
-	
-	printf("Enter the number of rows");
-	scanf("%d", &n);
-	
-	for(i=0; i<n; i++){
-		int val =1;
-		for(j=0; j<=i; j++){
-			printf("%d", val);
-			val = val*(i-j)/(j+1);
-		}
-		printf("\n");
-	}
-	return 0;
+
+int main() {
+    int arr[] = {2, 3, 5, 4, 5, 3, 2, 7, 8};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Unique numbers are: ");
+    for (int i = 0; i < n; i++) {
+        int count = 0;
+        // Check how many times arr[i] appears
+        for (int j = 0; j < n; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
+            }
+        }
+        // If it appears only once, print it
+        if (count == 1) {
+            printf("%d ", arr[i]);
+        }
+    }
+
+    return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
